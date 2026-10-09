@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yuxuan Li is an independent researcher in computer vision and machine learning.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Yuxuan Li</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%232b5da8'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial' font-size='28' font-weight='700' fill='white'%3EYL%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --text: #222222;
+      --muted: #666666;
+      --link: #245ca6;
+      --rule: #dddddd;
+      --page: #ffffff;
+      --width: 860px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--page);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.58;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+
+    .page {
+      width: min(calc(100% - 40px), var(--width));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 64px 0 48px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h1 {
+      margin: 0 0 4px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.5rem, 7vw, 3.25rem);
+      line-height: 1.12;
+      font-weight: 500;
+      letter-spacing: -0.025em;
+    }
+
+    .role {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0 0 22px;
+      font-size: 1.06rem;
+    }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      font-size: .96rem;
+    }
+
+    main { padding-bottom: 56px; }
+
+    section {
+      padding: 46px 0 4px;
+      scroll-margin-top: 24px;
+    }
+
+    section + section { margin-top: 4px; }
+
+    h2 {
+      margin: 0 0 22px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--rule);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.7rem;
+      line-height: 1.25;
+      font-weight: 500;
+    }
+
+    h3 {
+      margin: 0 0 3px;
+      font-size: 1rem;
+      line-height: 1.42;
+      font-weight: 700;
+    }
+
+    p { margin-top: 0; }
+    .publication-list { display: grid; }
+
+    .publication {
+      display: grid;
+      grid-template-columns: 54px minmax(0, 1fr);
+      gap: 18px;
+      padding: 0 0 25px;
+    }
+
+    .publication + .publication {
+      padding-top: 25px;
+      border-top: 1px solid #eeeeee;
+    }
+
+    .year {
+      padding-top: 1px;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .authors, .venue, .description, .links { margin-bottom: 5px; }
+    .authors, .description { color: var(--muted); font-size: .94rem; }
+    .venue { font-size: .94rem; font-style: italic; }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      margin-top: 7px;
+      font-size: .92rem;
+    }
+
+    .more-publications {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .current-work { max-width: 760px; margin: 0; }
+    .timeline { display: grid; }
+
+    .entry {
+      display: grid;
+      grid-template-columns: 142px minmax(0, 1fr);
+      gap: 22px;
+      padding: 0 0 20px;
+    }
+
+    .entry + .entry {
+      padding-top: 20px;
+      border-top: 1px solid #eeeeee;
+    }
+
+    .date { color: var(--muted); font-variant-numeric: tabular-nums; }
+    .entry p { margin: 2px 0 0; color: var(--muted); font-size: .94rem; }
+
+    footer {
+      padding: 24px 0 34px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: .85rem;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    @media (max-width: 620px) {
+      .page { width: min(calc(100% - 28px), var(--width)); }
+      header { padding: 46px 0 38px; }
+      section { padding-top: 38px; }
+      .publication { grid-template-columns: 1fr; gap: 5px; }
+      .publication + .publication { padding-top: 22px; }
+      .year { font-size: .9rem; }
+      .entry { grid-template-columns: 1fr; gap: 4px; }
+      .footer-row { flex-direction: column; gap: 3px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="page">
+      <h1>Yuxuan Li</h1>
+      <p class="role">Independent Researcher in Computer Vision and Machine Learning</p>
+      <p class="intro">I work on continual learning, model and content watermarking, and efficient 3D vision. Previously, I worked at Huawei after receiving my M.Eng. and B.Eng. degrees from Harbin Institute of Technology.</p>
+      <nav class="profile-links" aria-label="Profile links">
+        <a href="https://scholar.google.com/citations?user=6Gii2XoAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
+        <a href="https://github.com/liyuxuan-github" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <div class="publication-list">
+        <article class="publication">
+          <div class="year">2026</div>
+          <div>
+            <h3>PaLoRA: Paced Low-Rank Adaptation for Continual Learning</h3>
+            <p class="authors"><strong>Yuxuan Li</strong>, Fanhu Zeng, Hao Tang</p>
+            <p class="venue">NeurIPS 2026</p>
+            <p class="description">Rank-aware pacing for balancing stability and plasticity in long-horizon continual learning.</p>
+            <p class="links"><a href="https://arxiv.org/abs/2610.04226" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/liyuxuan-github/PaLoRA" target="_blank" rel="noreferrer">Code</a></p>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="year">2026</div>
+          <div>
+            <h3>DGS: Robust and Diverse Watermarks for Diffusion Models</h3>
+            <p class="authors"><strong>Yuxuan Li</strong>, Hao Tang</p>
+            <p class="venue">ACCV 2026</p>
+            <p class="description">A training-free diffusion watermark designed to improve robustness without sacrificing generation diversity.</p>
+            <p class="links"><a href="https://openreview.net/forum?id=7b8uUJDUkD" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/liyuxuan-github/DGS" target="_blank" rel="noreferrer">Code</a></p>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="year">2024</div>
+          <div>
+            <h3>Not Just Change the Labels, Learn the Features: Watermarking Deep Neural Networks with Multi-View Data</h3>
+            <p class="authors"><strong>Yuxuan Li</strong>, Sarthak Kumar Maharana, Yunhui Guo</p>
+            <p class="venue">ECCV 2024</p>
+            <p class="description">Feature-oriented neural-network watermarking that improves resistance to model-extraction attacks.</p>
+            <p class="links"><a href="https://arxiv.org/abs/2403.10663" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/liyuxuan-github/MAT" target="_blank" rel="noreferrer">Code</a></p>
+          </div>
+        </article>
+      </div>
+      <p class="more-publications">Additional publications and workshop papers are listed on <a href="https://scholar.google.com/citations?user=6Gii2XoAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>.</p>
+    </section>
+
+    <section id="research">
+      <h2>Current Research</h2>
+      <p class="current-work">Ongoing work on efficient 3D Gaussian Splatting, with a focus on reducing computational cost while preserving reconstruction quality.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="entry">
+          <div class="date">2025–Present</div>
+          <div><h3>Independent Researcher</h3><p>Continual learning, generative-model watermarking, and efficient 3D vision.</p></div>
+        </div>
+        <div class="entry">
+          <div class="date">2023–2025</div>
+          <div><h3>Huawei</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="entry">
+          <div class="date">2021–2023</div>
+          <div><h3>Harbin Institute of Technology</h3><p>M.Eng. in Electronic and Information Engineering (Computer Technology)</p></div>
+        </div>
+        <div class="entry">
+          <div class="date">2017–2021</div>
+          <div><h3>Harbin Institute of Technology</h3><p>B.Eng. in Computer Science and Technology</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="page footer-row">
+      <span>© 2026 Yuxuan Li</span>
+      <span>Last updated October 2026</span>
+    </div>
+  </footer>
+</body>
+</html>
